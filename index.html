@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Testowa 1</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
+    <link rel="stylesheet" href="style.css">
+<!--
+    <link rel="stylesheet" href="xy.js">
+    
+-->
+    <script>var dojoConfig = { parseOnLoad: true };</script>
+    <script src="https://js.arcgis.com/3.20/"></script>
+    <script src="script.js"></script> 
+</head>
+
+<body>
+    <div class="container" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline',gutters:false">
+        <div id="layerListPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right'">
+               <h2>Tabela zawartości</h2>           
+            <div id="layerList"></div>
+            <div id="AddPoint">
+                <h2>Dodaj punkt</h2>
+            </div>
+        </div>
+        <div id="map" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'"></div>
+    </div>
+</body>
+</html>
